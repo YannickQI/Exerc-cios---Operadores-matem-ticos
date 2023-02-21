@@ -1,0 +1,32 @@
+void main(){
+  double notaa = 2;
+  double notab = 6.5;
+  double notac = 4;
+  double notad = 4;
+  double notaexame = 6.4;
+  
+  var media =(notaa + notab + notac + notad)/4;
+  print("Média = ${media.toStringAsFixed(1)}");
+  
+  if(media >= 7.0){
+    print('Aluno Aprovado');
+  }else{
+    if(media < 5.0){
+      print('Aluno Reprovado');
+    }else{
+      if(media > 5.0){
+        print('Aluno em Exame');
+        print("Nota do Exame = $notaexame");
+        
+        var mediafinal = (media + notaexame)/2;
+        if(mediafinal > 5.0){
+          print('Aluno Aprovado');
+        }else{
+          if(mediafinal < 5.0){
+            print('Aluno Reprovado');
+          }
+        }
+      }
+    }
+  }
+}
