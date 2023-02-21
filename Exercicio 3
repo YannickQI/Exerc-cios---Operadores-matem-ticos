@@ -1,0 +1,13 @@
+void main(){
+  int jogoPar = 3;
+  
+  if(jogoPar % 2 == 0){
+    jogoPar--;
+    print("Jogador 1 ganhou (Par)");
+  }else{
+    print("Jogador 2 ganhou (Impar)");
+    
+  }
+  
+  
+}
